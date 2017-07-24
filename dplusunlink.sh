@@ -15,13 +15,5 @@
 # Recommended syntax for the alias is as follows: alias dplusunlink="/dstar/scripts/dplusunlink.sh"
 # /dstar/tmp should be world writable for this to work.
 #
-if [ $# -eq 0 ]; then
-echo "Usage: $0 <module>";
-echo "";
-echo "<module> = the local repeater module";
-echo "All arguments must be in UPPER CASE."
-echo "";
-exit 1;
-fi
 MOD=`echo "$1" | awk '{print tolower($1)}'`
 echo "       U" > /dstar/tmp/link-$MOD
