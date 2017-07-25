@@ -25,22 +25,22 @@ int main(int argc, char *argv[]) {
 		else if(args[3].length() == 6) { linkCommand = args[3] + args[4] + "L"; }
 		if (args[2] == "A") {
 			linkFile.open("/dstar/tmp/link-a");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 		}
 		else if (args[2] == "B") {
 			linkFile.open("/dstar/tmp/link-b");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 			}
 		else if (args[2] == "C") {
 			linkFile.open("/dstar/tmp/link-c");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 		}
 		else if (args[2] == "D") {
 			linkFile.open("/dstar/tmp/link-d");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 		}
 	}
@@ -48,22 +48,22 @@ int main(int argc, char *argv[]) {
 		linkCommand = "       U";
 		if(args[2] == "A") {
 			linkFile.open("/dstar/tmp/link-a");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 		}
 		else if(args[2] == "B") {
 			linkFile.open("/dstar/tmp/link-b");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 		}
 		else if(args[2] == "C") {
 			linkFile.open("/dstar/tmp/link-c");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 		}
 		else if(args[2] == "D") {
 			linkFile.open("/dstar/tmp/link-d");
-			linkFile << linkCommand;
+			linkFile << linkCommand << std::endl;
 			linkFile.close();
 		}
 	}
