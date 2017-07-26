@@ -67,5 +67,11 @@ int main(int argc, char *argv[]) {
 			linkFile.close();
 		}
 	}
+	else {
+		std::cerr << "Usage: \nLinking: " << args[0]
+			<< " link <local module> <remote repeater> <remote port>\nUnlinking: "
+			<< args[0] << " unlink <local module>" << std::endl
+			<< "Variable arguments must be in ALL CAPS." << std::endl;
+	}
 	return 0;
 }
